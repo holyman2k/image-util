@@ -16,6 +16,7 @@
 		6F9C320B16D97FA800C3A67B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F9C320A16D97FA800C3A67B /* Default.png */; };
 		6F9C320D16D97FA800C3A67B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F9C320C16D97FA800C3A67B /* Default@2x.png */; };
 		6F9C320F16D97FA800C3A67B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F9C320E16D97FA800C3A67B /* Default-568h@2x.png */; };
+		6F9C321716D9805D00C3A67B /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9C321616D9805D00C3A67B /* ImageUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		6F9C320A16D97FA800C3A67B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6F9C320C16D97FA800C3A67B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6F9C320E16D97FA800C3A67B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6F9C321516D9805D00C3A67B /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageUtil.h; path = classes/ImageUtil.h; sourceTree = "<group>"; };
+		6F9C321616D9805D00C3A67B /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageUtil.m; path = classes/ImageUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 			children = (
 				6F9C320716D97FA800C3A67B /* AppDelegate.h */,
 				6F9C320816D97FA800C3A67B /* AppDelegate.m */,
+				6F9C321516D9805D00C3A67B /* ImageUtil.h */,
+				6F9C321616D9805D00C3A67B /* ImageUtil.m */,
 				6F9C31FF16D97FA800C3A67B /* Supporting Files */,
 			);
 			path = ImageUtil;
@@ -166,6 +171,7 @@
 			files = (
 				6F9C320516D97FA800C3A67B /* main.m in Sources */,
 				6F9C320916D97FA800C3A67B /* AppDelegate.m in Sources */,
+				6F9C321716D9805D00C3A67B /* ImageUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
