@@ -10,6 +10,6 @@
 
 @interface ImageUtil : NSObject
 + (UIImage*)imageFromScaledImage:(UIImage*)image toSize:(CGSize)size;
-+ (void)setImageViewBorder:(UIImage*)imageView withColor:(UIColor *)color andThickness:(CGFloat)thickness;
++ (void)setImageViewBorder:(UIImageView*)imageView withColor:(UIColor *)color andThickness:(CGFloat)thickness;
 + (UIImage*)imageWithBorderFromImage:(UIImage*)source withColor:(UIColor *)color andThickness:(CGFloat)thickness;
 @end
