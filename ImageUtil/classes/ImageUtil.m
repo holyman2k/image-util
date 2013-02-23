@@ -7,18 +7,25 @@
 //
 
 #import "ImageUtil.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation ImageUtil
 
-+(UIImage*)scaleImage:(UIImage*)image toSize:(CGSize)size
++(UIImage*)imageFromScaledImage:(UIImage*)image toSize:(CGSize)size
 {
     float scale = size.width / image.size.width;
     if (image.size.height * scale > size.height || image.size.width * scale > size.width) scale = size.height / image.size.height;
     
-    image = [UIImage imageWithCGImage:[image CGImage] scale:1 / scale orientation:image.imageOrientation];
+    UIImage *scaledImage = [UIImage imageWithCGImage:[image CGImage] scale:1 / scale orientation:image.imageOrientation];
     
-    NSLog(@"resize image to %f x %f", image.size.width, image.size.height);
-    return image;
+    NSLog(@"resize image to %f x %f", scaledImage.size.width, scaledImage.size.height);
+    return scaledImage;
+}
+
++ (void)setImageViewBorder:(UIImageView*)imageView withColor:(UIColor *)color andThickness:(CGFloat)thickness
+{
+    [imageView.layer setBorderColor:[color CGColor]];
+    [imageView.layer setBorderWidth:thickness];
 }
 
 + (UIImage*)imageWithBorderFromImage:(UIImage*)source withColor:(UIColor *)color andThickness:(CGFloat)thickness;

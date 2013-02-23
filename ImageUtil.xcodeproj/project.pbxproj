@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F9BC3E016D98B9D00E96D06 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9BC3DF16D98B9D00E96D06 /* QuartzCore.framework */; };
 		6F9C31F916D97FA800C3A67B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9C31F816D97FA800C3A67B /* UIKit.framework */; };
 		6F9C31FB16D97FA800C3A67B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9C31FA16D97FA800C3A67B /* Foundation.framework */; };
 		6F9C31FD16D97FA800C3A67B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9C31FC16D97FA800C3A67B /* CoreGraphics.framework */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F9BC3DF16D98B9D00E96D06 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6F9C31F516D97FA800C3A67B /* ImageUtil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageUtil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9C31F816D97FA800C3A67B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6F9C31FA16D97FA800C3A67B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F9BC3E016D98B9D00E96D06 /* QuartzCore.framework in Frameworks */,
 				6F9C31F916D97FA800C3A67B /* UIKit.framework in Frameworks */,
 				6F9C31FB16D97FA800C3A67B /* Foundation.framework in Frameworks */,
 				6F9C31FD16D97FA800C3A67B /* CoreGraphics.framework in Frameworks */,
@@ -54,6 +57,7 @@
 		6F9C31EC16D97FA800C3A67B = {
 			isa = PBXGroup;
 			children = (
+				6F9BC3DF16D98B9D00E96D06 /* QuartzCore.framework */,
 				6F9C31FE16D97FA800C3A67B /* ImageUtil */,
 				6F9C31F716D97FA800C3A67B /* Frameworks */,
 				6F9C31F616D97FA800C3A67B /* Products */,
@@ -286,6 +290,7 @@
 				6F9C321416D97FA800C3A67B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

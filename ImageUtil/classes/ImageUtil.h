@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface ImageUtil : NSObject
-+(UIImage*)scaleImage:(UIImage*)image toSize:(CGSize)size;
++ (UIImage*)imageFromScaledImage:(UIImage*)image toSize:(CGSize)size;
++ (void)setImageViewBorder:(UIImage*)imageView withColor:(UIColor *)color andThickness:(CGFloat)thickness;
 + (UIImage*)imageWithBorderFromImage:(UIImage*)source withColor:(UIColor *)color andThickness:(CGFloat)thickness;
 @end
