@@ -13,10 +13,13 @@
 
 +(UIImage*)imageFromScaledImage:(UIImage*)image toSize:(CGSize)size
 {
+    float screenScale = [[UIScreen mainScreen] scale];
+    size = CGSizeMake(size.width * screenScale, size.height * screenScale);
     float scale = size.width / image.size.width;
+
     if (image.size.height * scale > size.height || image.size.width * scale > size.width) scale = size.height / image.size.height;
     
-    UIImage *scaledImage = [UIImage imageWithCGImage:[image CGImage] scale:1 / scale orientation:image.imageOrientation];
+    UIImage *scaledImage = [UIImage imageWithCGImage:[image CGImage] scale: 1 / scale orientation:image.imageOrientation];
     
     NSLog(@"resize image to %f x %f", scaledImage.size.width, scaledImage.size.height);
     return scaledImage;
